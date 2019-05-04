@@ -1,4 +1,4 @@
-package com.martin.motomandado.model;
+package com.martin.petlost.model;
 
 public class ApiResponse {
 	private boolean success;

@@ -1,4 +1,4 @@
-package com.martin.motomandado;
+package com.martin.petlost;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
-public class MotomandadoApplication {
+public class PetlostApplication {
 	@Value("${encriptacionContrasena.strength}")
 	private int strength;
 	
@@ -19,6 +19,6 @@ public class MotomandadoApplication {
     }
 
 	public static void main(String[] args) {
-		SpringApplication.run(MotomandadoApplication.class, args);
+		SpringApplication.run(PetlostApplication.class, args);
 	}
 }

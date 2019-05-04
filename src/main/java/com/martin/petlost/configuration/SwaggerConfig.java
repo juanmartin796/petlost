@@ -1,4 +1,4 @@
-package com.martin.motomandado.configuration;
+package com.martin.petlost.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

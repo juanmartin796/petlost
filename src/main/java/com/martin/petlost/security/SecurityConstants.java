@@ -1,4 +1,4 @@
-package com.martin.motomandado.security;
+package com.martin.petlost.security;
 
 public class SecurityConstants {
 	public static final String SECRET = "Hola";

@@ -1,6 +1,6 @@
-package com.martin.motomandado.services;
+package com.martin.petlost.services;
 
-import com.martin.motomandado.model.User;
+import com.martin.petlost.model.User;
 
 public interface IAplicationUserService {
 	public User findByUsername(String username);

@@ -1,4 +1,4 @@
-package com.martin.motomandado.model;
+package com.martin.petlost.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

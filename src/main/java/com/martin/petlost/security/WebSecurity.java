@@ -1,4 +1,4 @@
-package com.martin.motomandado.security;
+package com.martin.petlost.security;
 
 
 import org.springframework.http.HttpMethod;
@@ -12,12 +12,12 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
-import com.martin.motomandado.services.impl.UserDetailsServiceImpl;
-import com.martin.motomandado.utils.RutasServicios;
+import com.martin.petlost.services.impl.UserDetailsServiceImpl;
+import com.martin.petlost.utils.RutasServicios;
+
+import static com.martin.petlost.security.SecurityConstants.*;
 
 import org.springframework.context.annotation.Bean;
-
-import static com.martin.motomandado.security.SecurityConstants.*;
 
 @EnableWebSecurity
 public class WebSecurity extends WebSecurityConfigurerAdapter {

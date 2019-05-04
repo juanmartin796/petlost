@@ -1,4 +1,4 @@
-package com.martin.motomandado.utils;
+package com.martin.petlost.utils;
 
 public class RutasServicios {
 	public static final String HELLO_WORLD ="/users/helloworld";

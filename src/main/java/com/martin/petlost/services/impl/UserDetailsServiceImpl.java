@@ -1,4 +1,4 @@
-package com.martin.motomandado.services.impl;
+package com.martin.petlost.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,9 +6,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.martin.motomandado.dao.IAplicationUserDao;
-import com.martin.motomandado.model.User;
-import com.martin.motomandado.services.IAplicationUserService;
+import com.martin.petlost.dao.IAplicationUserDao;
+import com.martin.petlost.model.User;
+import com.martin.petlost.services.IAplicationUserService;
 
 import static java.util.Collections.emptyList;
 

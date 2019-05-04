@@ -1,4 +1,4 @@
-package com.martin.motomandado.security;
+package com.martin.petlost.security;
 
 
 import com.auth0.jwt.JWT;
@@ -12,10 +12,11 @@ import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import static com.martin.petlost.security.SecurityConstants.*;
+
 import java.io.IOException;
 import java.util.ArrayList;
-
-import static com.martin.motomandado.security.SecurityConstants.*;
 
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 

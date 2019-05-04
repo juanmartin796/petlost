@@ -1,4 +1,4 @@
-package com.martin.motomandado.security;
+package com.martin.petlost.security;
 
 
 import com.auth0.jwt.JWT;
@@ -19,9 +19,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 
-import static com.martin.motomandado.security.SecurityConstants.*;
-
 import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
+import static com.martin.petlost.security.SecurityConstants.*;
 
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
     private AuthenticationManager authenticationManager;
@@ -34,8 +33,8 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
     public Authentication attemptAuthentication(HttpServletRequest req,
                                                 HttpServletResponse res) throws AuthenticationException {
         try {
-            com.martin.motomandado.model.User creds = new ObjectMapper()
-                    .readValue(req.getInputStream(), com.martin.motomandado.model.User.class);
+            com.martin.petlost.model.User creds = new ObjectMapper()
+                    .readValue(req.getInputStream(), com.martin.petlost.model.User.class);
 
             return authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(

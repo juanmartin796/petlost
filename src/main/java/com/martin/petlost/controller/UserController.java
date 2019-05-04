@@ -1,4 +1,4 @@
-package com.martin.motomandado.controller;
+package com.martin.petlost.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -19,11 +19,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.martin.motomandado.dao.IAplicationUserDao;
-import com.martin.motomandado.model.ApiResponse;
-import com.martin.motomandado.model.User;
-import com.martin.motomandado.services.IAplicationUserService;
-import com.martin.motomandado.utils.RutasServicios;
+import com.martin.petlost.dao.IAplicationUserDao;
+import com.martin.petlost.model.ApiResponse;
+import com.martin.petlost.model.User;
+import com.martin.petlost.services.IAplicationUserService;
+import com.martin.petlost.utils.RutasServicios;
 
 @RestController
 @RequestMapping("users")
