@@ -32,8 +32,8 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable().authorizeRequests()
-                .antMatchers(HttpMethod.POST, RutasServicios.SIGN_UP_URL).permitAll()
-                .antMatchers(HttpMethod.GET, RutasServicios.HELLO_WORLD, "/swagger*/**", "/v2/api-docs**",  "/webjars/springfox-swagger-ui/**").permitAll()
+                .antMatchers(HttpMethod.POST, RutasServicios.SIGN_UP_URL, "/login").permitAll()
+                .antMatchers(HttpMethod.GET, RutasServicios.HELLO_WORLD, "/csrf", "/swagger*/**", "/v2/api-docs**",  "/webjars/springfox-swagger-ui/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .addFilter(new JWTAuthenticationFilter(authenticationManager()))
